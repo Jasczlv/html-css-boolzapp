@@ -129,16 +129,21 @@ nav.bg-blue {
 
 /* chat section aperta */
 
-.bg-main {
-    width: 100vw;
+body {
     height: 100vh;
+    width: 100vw;
+} 
+
+.bg-main , .main-section {
+    width: 100%;
+    height: 100%;
 }
 
 .chat-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
 }
 
 .chat-section > div.container.column {
@@ -181,8 +186,7 @@ nav.bg-blue {
 .chat-type-input {
     width: 100%;
     height: 50px;
-    justify-content: center;
-    align-items: center;
+    align-self: flex-end;
 }
 
 .chat-type-input .bg {
@@ -204,7 +208,44 @@ nav.bg-blue {
     border-radius: 3px;
 }
 
+/* media query */
 
+@media screen and (min-width: 576px) {
+
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .bg-main {
+        background-color: #dbdbd4;
+        position: relative;
+        z-index: -2;
+    }
+
+    .chat-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+
+    .green-strip {
+        background-color: #4d9288;
+        height: 200px;
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .sidebar {
+        display: flex;
+        width: 200px;
+        height: 100%;
+        background-color: #FFFFFF;
+    }
+
+}
 
 /* DEBUG */
 
