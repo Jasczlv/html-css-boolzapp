@@ -166,6 +166,13 @@ nav.bg-blue {
 
     /* sidebar */
 
+    .sidebar-user-profile .bg.row {
+        padding: 5px 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
 
     .sidebar .sidebar-user-profile .bg {
         background-color: #eaeaea;
@@ -187,44 +194,89 @@ nav.bg-blue {
     }
 
     .main-section {
-        max-width: 70%;
+        max-width: 75%;
         margin: 0 auto;
     }
 
     .sidebar {
         display: flex;
-        width: 20%;
+        width: 25%;
         height: 100%;
         background-color: white;
     }
 
     .chat-section {
-        width: 80%;
+        width: 75%;
         height: 100%;
         background-color: blueviolet;
     }
 
     /* sidebar */
 
+    .sidebar {
+        background-color: #fafafa;
+    }
+
+    .sidebar-user-profile div.d-none {
+        gap: 7px;
+        color: #b1b1b1;
+    }
+    
+
+    /* attiva notifiche */
 
     .attiva-notifiche{
-        padding-left: 10px;
+        padding: 5px;
         align-items: center;
         background-color: #a6d7f9;
-        height: 45px;
+    }
+
+    .attiva-notifiche .bg.row {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+ 
+    
+    .attiva-notifiche span {
+        font-size: 12px;
+    }
+
+    .attiva-notifiche span:nth-child(2){
+        font-size: 10px;
+        color: rgb(114, 113, 113);
     }
 
     .fa-bell-slash {
-        display: flex;
         color: #a6d7f9;
         background-color: white;
         border-radius: 25px;
         aspect-ratio: 1;
         padding: 7px;
-        align-items: center ;
         margin-right: 10px;
     }
+    
 
+    /* sidebar search */
+
+    .search-contacts {
+        padding: 5px;
+    }
+
+    .search-contacts input {
+        width: 100%;
+        font-size: 9px;
+    }
+
+
+    /* display none --> display */
+
+    .attiva-notifiche {
+        display: flex;
+    }
+
+    .sidebar-user-profile div.d-none {
+        display: flex;
+    }
 }
 
 /* DEBUG */
