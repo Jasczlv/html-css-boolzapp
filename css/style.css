@@ -6,10 +6,6 @@
 	box-sizing: border-box;
 }
 
-img {
-    width: 100%;
-}
-
 a {
 	text-decoration: none;
 	color: currentColor;
@@ -173,7 +169,13 @@ nav.bg-blue {
 
     .sidebar .sidebar-user-profile .bg {
         background-color: #eaeaea;
-        height: 20px;
+    }
+
+    
+    .avatar {
+        height: 40px;
+        aspect-ratio: 1;
+        border-radius: 25px;
     }
 
 }
@@ -196,15 +198,31 @@ nav.bg-blue {
         background-color: white;
     }
 
-    .sidebar img {
-        max-height: 30px;
-        aspect-ratio: 1;
-    }
-
     .chat-section {
         width: 80%;
         height: 100%;
         background-color: blueviolet;
+    }
+
+    /* sidebar */
+
+
+    .attiva-notifiche{
+        padding-left: 10px;
+        align-items: center;
+        background-color: #a6d7f9;
+        height: 45px;
+    }
+
+    .fa-bell-slash {
+        display: flex;
+        color: #a6d7f9;
+        background-color: white;
+        border-radius: 25px;
+        aspect-ratio: 1;
+        padding: 7px;
+        align-items: center ;
+        margin-right: 10px;
     }
 
 }
