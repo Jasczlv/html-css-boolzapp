@@ -23,6 +23,10 @@ ol {
     display: none;
 }
 
+.d-block {
+    display: block;
+}
+
 .bg-black {
     background-color: black;
 }
@@ -167,12 +171,10 @@ nav.bg-blue {
     /* sidebar */
 
     .sidebar-user-profile .bg.row {
-        padding: 5px 10px;
+        padding: 10px 16px;
         align-items: center;
         justify-content: space-between;
     }
-
-
 
     .sidebar .sidebar-user-profile .bg {
         background-color: #eaeaea;
@@ -180,6 +182,8 @@ nav.bg-blue {
 
     
     .avatar {
+        flex-shrink: 0;
+        flex-grow: 0;
         height: 40px;
         aspect-ratio: 1;
         border-radius: 25px;
@@ -190,11 +194,11 @@ nav.bg-blue {
 @media screen and (min-width: 992px) {
 
     .bg-main {
-        padding: 5% 0;
+        padding: 36px 0;
     }
 
     .main-section {
-        max-width: 75%;
+        max-width: 80%;
         margin: 0 auto;
     }
 
@@ -226,7 +230,7 @@ nav.bg-blue {
     /* attiva notifiche */
 
     .attiva-notifiche{
-        padding: 5px;
+        padding: 16px;
         align-items: center;
         background-color: #a6d7f9;
     }
@@ -259,14 +263,73 @@ nav.bg-blue {
     /* sidebar search */
 
     .search-contacts {
-        padding: 5px;
+        display: flex;
+    }
+
+    .search-contacts {
+        display: block;
+    }
+
+    .search-contacts .bg {
+        position: relative;
     }
 
     .search-contacts input {
         width: 100%;
-        font-size: 9px;
+        height: 32px;
+        background-color: white;
+        border-top: 1px solid #d6d6d6;
+        border-bottom: 1px solid #d6d6d6;
+        outline: none;
+        padding-left: 50px;
+        padding-right: 10px;
     }
 
+    .fa-magnifying-glass {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        color: #b1b1b1;
+        transform: translateY(-50%);
+        pointer-events: none;
+        font-size: 16px;
+    }
+
+    /* chat preview */
+
+    .chat-preview {
+        flex-grow: 1;
+    }
+
+    .contact {
+        padding: 10px;
+    }    
+
+    .contact-name {
+        font-size: 14px;
+    }
+
+    .chat-preview {
+        font-size: 10px;
+    }
+
+    .contact:last-child {
+        font-size: 14px;
+    }
+
+    .contact.row {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact.row>div.row {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact:not(:last-child) {
+        border-bottom: 1px solid rgba(161, 161, 161, 0.432);
+    }
 
     /* display none --> display */
 
@@ -277,6 +340,12 @@ nav.bg-blue {
     .sidebar-user-profile div.d-none {
         display: flex;
     }
+
+    .chat-preview {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
 /* DEBUG */
